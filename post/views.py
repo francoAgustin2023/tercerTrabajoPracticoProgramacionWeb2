@@ -32,3 +32,23 @@ class ListarEnDetalle(LoginRequiredMixin, DetailView):
     model = Publicacion
     template_name = 'publicacion_en_detalle.html'
     context_object_name = 'publicacion'
+
+class EliminarPublicacion(LoginRequiredMixin, DeleteView):
+    model = Publicacion
+    template_name = 'confirmar_eliminar.html'
+    success_url = reverse_lazy('home')
+    context_object_name = 'publicacion'
+    
+class ActualizarPublicacion(LoginRequiredMixin, UpdateView):
+    model = Publicacion
+    fields = ['titulo','contenido']
+    template_name = 'actualizar_publicacion.html'
+    success_url = reverse_lazy('home')
+    
+    def form_valid(self, form):
+        return super().form_valid(form)
+    
+class RegistroUsuario(CreateView):
+    template_name = 'registro.html'
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Eliminar Posteo{% endblock %}
+
+{% block header %}
+    <h1>Eliminar Posteo</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <div class="publicacion">
+        <h2>¿Estas seguro de que queres eliminar este posteo?</h2>
+        <div>
+            <div>
+                <span>
+                    Titulo: 
+                    <span>{{ publicacion.titulo }}</span>
+                </span>
+
+                <span>
+                    Autor: 
+                    <span>{{ publicacion.autor }}</span>
+                </span>
+
+                <span>
+                    Fecha de publicacion: 
+                    <span>{{ publicacion.fechaPublicacion }}</span>
+                </span>
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                <a href="{%url 'listar_publicaciones' %}">Cancelar</a>
+                <button type="submit">Eliminar</button>
+            </form>
+        </div>
+    </div>
+
+        
+
+        
+        
+        
+    
+{% endblock %}
