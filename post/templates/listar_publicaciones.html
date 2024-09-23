@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Listar publicaciones{% endblock %}
+
+{% block header %}
+    <h1>Listar publicaciones</h1>
+{% endblock %}
+
+{% block content %}
+
+    <div class="lista">
+
+        <h2>Publicaciones: </h2>
+
+        <ul>
+
+        {% for publicacion in publicaciones %}
+
+            <li>
+
+                <span>
+                    Titulo: 
+                    <span>{{ publicacion.titulo }}</span>
+                </span>
+
+                <span>
+                    Fecha de creacion: 
+                    <span>{{ publicacion.fechaPublicacion }}</span>
+                </span>
+
+                <span>
+                    Autor: 
+                    <span>{{ publicacion.autor }}</span>
+                </span>
+
+                <a href="{% url "publicacion_en_detalle" publicacion.pk %}">Ver detalle de la publicacion</a>
+
+            </li>
+
+        {% endfor %}
+
+        </ul>
+        
+    </div>
+    
+{% endblock %}

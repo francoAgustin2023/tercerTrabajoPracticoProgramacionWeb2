@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Publicacion en detalle{% endblock %}
+
+{% block header %}
+    <h1>Publicacion en detalle</h1>
+{% endblock %}
+
+{% block content %}
+
+    <div class="publicacion">
+
+        <h2>Publicacion: </h2>
+
+        <div> 
+
+            <div> 
+
+                <span>
+                    Titulo: 
+                    <span>{{ publicacion.titulo }}</span>
+                </span>
+
+                <span>
+                    Autor: 
+                    <span>{{ publicacion.autor }}</span>
+                </span>
+
+                <span>
+                    Fecha de publicacion: 
+                    <span>{{ publicacion.fechaPublicacion }}</span>
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div>
+                {{ publicacion.contenido }}
+            </div>
+
+            <hr>
+
+            <nav>
+                <a href="{% url "actualizar_publicacion" publicacion.pk %}">Actualizar posteo</a>
+                {% if user.is_authenticated and user == publicacion.autor %}
+                <a href="{% url "confirmar_eliminar" publicacion.pk %}">Eliminar posteo</a>
+                {% endif %}
+                <a href="{% url "listar_publicaciones" %}">Volver</a>
+            </nav>
+        
+        </div>
+        
+    </div>
+    
+{% endblock %}
