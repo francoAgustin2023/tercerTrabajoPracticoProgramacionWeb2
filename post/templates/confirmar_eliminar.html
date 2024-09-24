@@ -10,35 +10,29 @@
     
     <div class="publicacion">
         <h2>¿Estas seguro de que queres eliminar este posteo?</h2>
-        <div>
-            <div>
-                <span>
+        <div class="interior">
+            <div class="datos">
+                <span class="textoNormal">
                     Titulo: 
-                    <span>{{ publicacion.titulo }}</span>
+                    <span class="textoItemLista">{{ publicacion.titulo }}</span>
                 </span>
 
-                <span>
+                <span class="textoNormal">
                     Autor: 
-                    <span>{{ publicacion.autor }}</span>
+                    <span class="textoItemLista">{{ publicacion.autor }}</span>
                 </span>
 
-                <span>
+                <span class="textoNormal">
                     Fecha de publicacion: 
-                    <span>{{ publicacion.fechaPublicacion }}</span>
+                    <span class="textoItemLista">{{ publicacion.fechaPublicacion }}</span>
                 </span>
             </div>
-            <form method="post">
+            <form class="eliminar" method="post">
                 {% csrf_token %}
-                <a href="{%url 'listar_publicaciones' %}">Cancelar</a>
+                <a class="cancelar" href="{%url 'listar_publicaciones' %}">Cancelar</a>
                 <button type="submit">Eliminar</button>
             </form>
         </div>
     </div>
-
-        
-
-        
-        
-        
     
 {% endblock %}

@@ -16,21 +16,21 @@
 
         {% for publicacion in publicaciones %}
 
-            <li>
+            <li class="textoEnlace">
 
-                <span>
+                <span class="textoNormal">
                     Titulo: 
-                    <span>{{ publicacion.titulo }}</span>
+                    <span class="textoItemLista">{{ publicacion.titulo }}</span>
                 </span>
 
-                <span>
+                <span class="textoNormal">
                     Fecha de creacion: 
-                    <span>{{ publicacion.fechaPublicacion }}</span>
+                    <span class="textoItemLista">{{ publicacion.fechaPublicacion }}</span>
                 </span>
 
-                <span>
+                <span class="textoNormal">
                     Autor: 
-                    <span>{{ publicacion.autor }}</span>
+                    <span class="textoItemLista">{{ publicacion.autor }}</span>
                 </span>
 
                 <a href="{% url "publicacion_en_detalle" publicacion.pk %}">Ver detalle de la publicacion</a>

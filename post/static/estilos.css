@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: #eafaf1;
+}
+
+header{
+    height: 90px;
+    background-color: #abebc6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parteRegistro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+.parteRegistro *{
+    margin-right: 15px;
+}
+
+.textoNormal{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.textoEnlace a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.contenido{
+    background-color: #eafaf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.formulario{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formulario p *{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.formulario p label{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.formulario p input{
+    height: 40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.formulario p textarea{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.formulario button{
+    width: 70%;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #abebc6;
+}
+
+.formulario button:hover{
+    background-color: #5499c7;
+    color: white;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.textoItemLista{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.lista h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lista ul{
+    background-color: #d5f5e3;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lista li{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.lista li:hover{
+    background-color: #abebc6 ;
+    border-radius: 10px;
+}
+
+.publicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.publicacion h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.publicacion .interior{
+    background-color: #d5f5e3;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.publicacion .datos{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.publicacion hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.publicacion .contenidoTexto{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: start;
+}
+
+.publicacion .enlacesPublicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #abebc6; 
+}
+
+.eliminar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.eliminar button{
+    width: 30%;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #abebc6;
+}
+
+.eliminar button:hover{
+    background-color: #5499c7;
+    color: white;
+}
+
+.cancelar{
+    border: 2px solid;
+    text-decoration: none;
+    width: 30%;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #abebc6;
+    text-align: center;
+    color: black;
+}
+
+.cancelar:hover{
+    background-color: #5499c7;
+    color: white;
+    border-color: black;
+}
+
+.registroIniciarSesion{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: c6f7db;
+    height: 100vh;
+}
+
+.registroIniciarSesion h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}

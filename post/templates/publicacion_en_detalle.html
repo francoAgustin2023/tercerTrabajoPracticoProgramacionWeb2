@@ -12,36 +12,36 @@
 
         <h2>Publicacion: </h2>
 
-        <div> 
+        <div class="interior"> 
 
-            <div> 
+            <div class="datos"> 
 
-                <span>
+                <span class="textoNormal">
                     Titulo: 
-                    <span>{{ publicacion.titulo }}</span>
+                    <span class="textoItemLista">{{ publicacion.titulo }}</span>
                 </span>
 
-                <span>
+                <span class="textoNormal">
                     Autor: 
-                    <span>{{ publicacion.autor }}</span>
+                    <span class="textoItemLista">{{ publicacion.autor }}</span>
                 </span>
 
-                <span>
+                <span class="textoNormal">
                     Fecha de publicacion: 
-                    <span>{{ publicacion.fechaPublicacion }}</span>
+                    <span class="textoItemLista">{{ publicacion.fechaPublicacion }}</span>
                 </span>
 
             </div>
 
             <hr>
 
-            <div>
+            <div class="contenidoTexto">
                 {{ publicacion.contenido }}
             </div>
 
             <hr>
 
-            <nav>
+            <nav class="enlacesPublicacion textoEnlace">
                 <a href="{% url "actualizar_publicacion" publicacion.pk %}">Actualizar posteo</a>
                 {% if user.is_authenticated and user == publicacion.autor %}
                 <a href="{% url "confirmar_eliminar" publicacion.pk %}">Eliminar posteo</a>
