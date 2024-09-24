@@ -16,6 +16,6 @@ Instrucciones para correr el proyecto:
 7. Ya podemos ejecutar el servidor. Hacerlo con el comando `python manage.py runserver`
 8. El servidor estara en ejecucion en el directorio raiz `http://127.0.0.1:8000/` (el que viene por defecto) y no será necesario ingresar otra url. Se navega perfectamente por medio de la interfaz.
 
-Una vez ejecutado el servidor, ya se puede interactuar con la aplicacion. Hay dos usuarios ya creados: `franco` y `agustin`. Ambos tienen de password: `12345678qwert`. Y ambos tienen ya algunos posteos hechos.
+Una vez ejecutado el servidor, ya se puede interactuar con la aplicacion. Hay dos usuarios ya creados: `franco` y `agustin`. Ambos tienen de password: `12345678qwerty`. Y ambos tienen ya algunos posteos hechos.
 
 De ser necesario eliminar estos usuarios y crear nuevos, o ir probando.
